@@ -16,7 +16,7 @@
                     },
                 },
                 fontFamily:{
-                    inter: ['Inter', 'sans-serif']
+                    inter: ['Inter', 'sans-serif'];
                 }
             }
         }
@@ -26,11 +26,38 @@
 
 <!-- <body class="bg-gradient-to-r from-purple-400 to-blue-600"> -->
 <body 
-    class="w-full h-full bg-cover bg-fixed"
+    class="h-screan bg-cover bg-fixed justify-center items-center"
     style="background-image: url('../static/img/fundo-login.png')">
-    <main class="bg-white flex flex-col lg:flex-col justify-center items-center w-3/5 mx-auto my-40 p-12 shadow-2xl opacity-60">
-        <img class="w-2/5 lg:w-2.5/5" src="../static/img/logo-cigam-falavinha.png" alt="Logo Cigam Falavinha Next text-left">
-        <h1 class="text-1xl lg:text-2xl">Tela de Login </h1>
+
+    <main class="flex flex-col justify-center align-items:center">
+
+        <section class="bg-laranja-claro hidden">
+            <img class="" src="../static/img/graficos.jpg" alt="icone de gráficos">
+        </section>
+
+        
+
+        <section class="bg-white w-2/5 mx-auto my-40 p-12 opacity-80">
+            
+            <img class="flex center" src="../static/img/logo-cigam-falavinha.png" alt="Logo Cigam Falavinha Next">
+
+            <section class="">
+                <div class="text-center">
+                    <p class="text-1.5xl text-gray-600">Acesso exclusivo para Time Cigam</p>
+                </div>
+                
+
+                <form>
+                    <label class="text-2xl" for="email">Usuário</label>
+                    <input class="" id="email" type="email" placeholder="Digite seu E-mail">  
+                    <label class="text-2xl" for="senha">Senha</label>
+                    <input class="" id="senha" type="senha" placeholder="Digite sua senha">                 
+                    <button class="bg-laranja-escuro text-2xl text-white font-bold" type="button">Entrar</button>
+                </form>
+            </section>
+        </section>  
+        
+
     </main>
 </body>
 
